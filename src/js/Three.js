@@ -109,7 +109,7 @@ class Three {
 			wasdColor: '#fff',
 			colors: {
 				qe: ['#fff', 'orange', 'yellow', '#b0b0b0'],
-				wasd: ['purple', 'cyan', 'gren', '#fff'],
+				wasd: ['purple', 'cyan', 'green', '#fff'],
 			},
 		};
 
@@ -239,7 +239,7 @@ class Three {
 				start: 'center center',
 				end: 'bottom center',
 				toggleActions: 'restart play none none',
-				markers: true,
+				// markers: true,
 			},
 		});
 
