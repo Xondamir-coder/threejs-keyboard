@@ -1,0 +1,22 @@
+{
+	"name": "keyboard",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"main": "main.js",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"lil-gui": "^0.19.1",
+		"vite": "^5.0.12"
+	},
+	"dependencies": {
+		"gsap": "^3.12.5",
+		"three": "^0.161.0"
+	}
+}

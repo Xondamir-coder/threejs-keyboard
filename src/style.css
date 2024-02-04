@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,400;12..96,700;12..96,800&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Bricolage Grotesque', sans-serif;
+	background-color: #4e17cf;
+	color: #fff;
+	padding: 0 2rem;
+}
+h1 {
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	line-height: 1;
+	font-weight: 800;
+	font-size: 10vw;
+}
+
+.canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.heading-1 {
+	position: relative;
+	z-index: 1;
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+.content {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	align-content: center;
+	row-gap: 2rem;
+}
+.content:nth-child(odd) {
+	justify-content: end;
+}
+.content:nth-child(even) {
+	justify-content: start;
+}
+.content:last-child {
+	justify-content: center;
+	align-content: end;
+	margin-bottom: 6rem;
+}
+.content h2 {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+.content p {
+	font-size: 1.1rem;
+	font-weight: 200;
+	margin-top: 2rem;
+	width: 27.2rem;
+}
+.button {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	background-color: transparent;
+	font-size: 18px;
+	font-weight: 200;
+	width: 100%;
+	border-radius: 10px;
+	padding: 20px 0;
+	cursor: pointer;
+	color: white;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0;
+	transition: width 0.4s;
+	background-color: #000;
+}
+
+.full-height {
+	height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		padding: 0 1rem;
+	}
+	.content p {
+		width: 100%;
+	}
+}
